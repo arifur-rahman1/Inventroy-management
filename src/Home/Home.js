@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar';
 
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            
             <div className="grid grid-cols-3 gap-3">
                 {/* card one */}
                 <div className="card w-96 bg-base-100 shadow-xl">

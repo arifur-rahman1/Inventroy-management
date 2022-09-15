@@ -11,20 +11,22 @@ const Shorts = () => {
     }, [])
     return (
         <>
-         <div className='my-16 flex justify-center'>
-         <h1 className='font-bold text-2xl'>Available Items</h1>
-         </div>
-         <div className="ml-10 grid grid-cols-3 ">
-            {
-             items.map(item=><Shoe
-             key={items._id}
-             item={item}
-             ></Shoe>
-             )
-            }
-         </div>
+            <div className='my-16 flex justify-center'>
+                <h1 className='font-bold text-2xl'>Available Items</h1>
+            </div>
+            <div className="ml-10 grid grid-cols-3 gap-4 ">
+                {
+                    items.map(item => <Shoe
+                        items={items}
+                        setItems={setItems}
+                        key={items._id}
+                        item={item}
+                    ></Shoe>
+                    )
+                }
+            </div>
         </>
-        );
+    );
 };
 
 export default Shorts;
