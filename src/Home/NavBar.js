@@ -15,7 +15,7 @@ const NavBar = () => {
     <div>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <Link to={'/'} className="text-xl">Cloth House</Link>
+          <Link to={'/home'} className="text-xl">Cloth House</Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
