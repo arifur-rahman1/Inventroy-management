@@ -46,7 +46,7 @@ const UpdateUser = () => {
                     onChange={(e) => setPhotoURL(e.target.value)}
                 />
                 <button
-                    className="btn"
+                    className="btn w-36"
                     onClick={async () => {
                         await updateProfile({ displayName, photoURL });
                         alert('Profile has been updated');
@@ -57,20 +57,17 @@ const UpdateUser = () => {
             </div>
             {/* for updating password */}
             <div className='flex flex-col lg:flex-row lg:items-center lg:gap-x-4 mt-8'>
-          <label className='w-[250px] text-xl'>New Password </label>
-          <input className='input input-primary border-[#2366B5] rounded-none pr-32 focus:outline-none' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input className='input input-bordered rounded-none pr-32 focus:outline-none' type="password" placeholder='New Password' value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
 
-        <div className='flex flex-col lg:flex-row lg:items-center gap-x-4 mt-8'>
+        <div className='flex flex-col lg:flex-row lg:items-center mt-8'>
           <label className='w-[250px] text-xl'> </label>
 
           <button onClick={async () => {
             await updatePassword(password);
             alert('Yor password has been updated');
-          }} className='btn btn-primary lg:w-[300px] bg-[#2366B5] border-none text-white font-bold  hover:bg-[#2366B5] block '>Confirm</button>
+          }} className='btn '>Confirm</button>
         </div>
-
-      
             </div>
 
         </div>
