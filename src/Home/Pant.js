@@ -4,7 +4,7 @@ const Pant = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/item?category=Pant')
+        fetch('https://inventory-management-server-r5m8mqh5v-arifur-rahman1.vercel.app/item?category=Pant')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

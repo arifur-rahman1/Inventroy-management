@@ -5,7 +5,7 @@ const Shorts = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/item?category=Shoe')
+        fetch('https://inventory-management-server-r5m8mqh5v-arifur-rahman1.vercel.app/item?category=Shoe')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

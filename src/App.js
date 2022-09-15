@@ -11,6 +11,7 @@ import UpdateItem from './Home/UpdateItem';
 import Login from './Login/Login';
 import Resetpassword from './Login/Resetpassword';
 import Signup from './Login/Signup';
+import UpdateUser from './Login/UpdateUser';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/signup" element={<Signup></Signup>}></Route>
           <Route path="/reset" element={<Resetpassword></Resetpassword>}></Route>
+          <Route path="/updateuser" element={<UpdateUser></UpdateUser>}></Route>
           </Routes>      
     </div>
   );

@@ -5,11 +5,11 @@ const UpdateItem = () => {
     const { id } = useParams();
     const hanldeUpdate = (event) => {
         event.preventDefault();
-        const displayName=event.target.displayName.value
-        const description=event.target.description.value
-        const price=event.target.price.value
-        const updatedItem={displayName,description,price}
-        const url = `http://localhost:5000/item/${id}`;
+        const displayName = event.target.displayName.value
+        const description = event.target.description.value
+        const price = event.target.price.value
+        const updatedItem = { displayName, description, price }
+        const url = `https://inventory-management-server-r5m8mqh5v-arifur-rahman1.vercel.app/item/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {
